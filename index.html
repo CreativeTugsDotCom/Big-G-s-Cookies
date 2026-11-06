@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big G's Cookies | Homemade Gourmet Cookies in Trumbull, CT</title>
+    <meta name="description" content="Homemade gourmet cookies baked with heart in Trumbull, Connecticut. Discover our handcrafted cookies, local event appearances, and custom order enquiries.">
+    <meta name="keywords" content="Big G's Cookies, Trumbull CT cookies, homemade cookies Connecticut, gourmet cookies, custom cookie orders">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cocoa: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#e5d3cd',
+                            300: '#cca99e',
+                            600: '#7a4233',
+                            800: '#4a241b',
+                            900: '#2b120c',
+                            950: '#1a0906',
+                        },
+                        cream: {
+                            50: '#fffdfa',
+                            100: '#fbf7ee',
+                            200: '#f6eedc',
+                            300: '#eddcb7',
+                            400: '#e3c68d',
+                        },
+                        sage: {
+                            50: '#f4f6f4',
+                            100: '#e4ebe4',
+                            500: '#789578',
+                            700: '#465946',
+                        },
+                        raspberry: {
+                            500: '#bd4b5b',
+                            600: '#a33948',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        handwriting: ['Caveat', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Custom scrollbar and ambient styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fbf7ee;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cca99e;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7a4233;
+        }
+        
+        /* Subtle texture background */
+        .bg-paper-texture {
+            background-color: #fbf7ee;
+            background-image: radial-gradient(#2b120c 0.4px, transparent 0.4px), radial-gradient(#2b120c 0.4px, #fbf7ee 0.4px);
+            background-size: 16px 16px;
+            background-position: 0 0, 8px 8px;
+            background-opacity: 0.02;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(26,9,6,0.7) 0%, rgba(26,9,6,0.4) 50%, rgba(26,9,6,0.85) 100%);
+        }
+
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-cream-100 text-cocoa-900 font-sans antialiased selection:bg-cocoa-600 selection:text-cream-50 flex flex-col min-h-screen">
+
+    <!-- Announcement Bar -->
+    <div class="bg-cocoa-950 text-cream-200 text-xs py-2 px-4 text-center tracking-widest uppercase font-medium flex items-center justify-center space-x-2 border-b border-cocoa-800/40">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Homemade Cookies | Handcrafted in Trumbull, Connecticut</span>
+        <span class="hidden sm:inline">| Local Pickups & Market Events</span>
+    </div>
+
+    <!-- Sticky Header Navigation -->
+    <header id="mainHeader" class="sticky top-0 z-40 bg-cream-100/95 backdrop-blur-md transition-all duration-300 border-b border-cocoa-200/50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 sm:h-24">
+                
+                <!-- Brand Circular Logo -->
+                <a href="#home" class="flex items-center group py-2 focus:outline-none" aria-label="Big G's Cookies Home">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 transition-transform duration-300 group-hover:scale-105 relative">
+                        <!-- Official Brand Logo Image inside circular container -->
+                        <div class="w-full h-full rounded-full p-1 bg-gradient-to-br from-cocoa-800 via-cocoa-600 to-cream-300 shadow-md flex items-center justify-center">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/4fd30a5d-e627-4826-bfe4-1054897873e0.jpg" 
+                                 alt="Big G's Cookies Official Logo" 
+                                 class="w-full h-full object-cover rounded-full filter drop-shadow"
+                                 onerror="this.src='https://placehold.co/200x200/4a241b/fbf7ee?text=Big+G%27s'">
+                        </div>
+                    </div>
+                    <div class="ml-3 hidden sm:flex flex-col">
+                        <span class="font-serif text-xl font-bold tracking-tight text-cocoa-900 leading-none">Big G's</span>
+                        <span class="text-xs font-semibold tracking-widest uppercase text-cocoa-600 mt-1">Cookies CT</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">Home</a>
+                    <a href="#cookies" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">Our Cookies</a>
+                    <a href="#custom-orders" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">Custom Orders</a>
+                    <a href="#events" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">Events</a>
+                    <a href="#story" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">Our Story</a>
+                    <a href="#faq" class="text-sm font-medium text-cocoa-800 hover:text-cocoa-600 transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Action Button & Mobile Hamburger -->
+                <div class="flex items-center space-x-4">
+                    <a href="#custom-orders" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-cream-50 bg-cocoa-800 hover:bg-cocoa-900 shadow-sm hover:shadow transition-all duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-cookie-bite mr-2 text-cream-300"></i>
+                        <span>Ask About an Order</span>
+                    </a>
+                    
+                    <!-- Mobile Hamburger Button -->
+                    <button id="mobileMenuBtn" type="button" class="md:hidden p-2.5 rounded-lg text-cocoa-800 hover:bg-cream-200 focus:outline-none" aria-label="Toggle Navigation Menu">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-cream-50 border-b border-cocoa-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">Home</a>
+            <a href="#cookies" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">Our Cookies</a>
+            <a href="#custom-orders" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">Custom Orders</a>
+            <a href="#events" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">Events & Markets</a>
+            <a href="#story" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">Our Story</a>
+            <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-cocoa-900 hover:bg-cream-200">FAQ</a>
+            <div class="pt-2">
+                <a href="#custom-orders" class="mobile-nav-link w-full flex items-center justify-center px-4 py-3 rounded-full text-center font-medium text-cream-50 bg-cocoa-800 hover:bg-cocoa-900">
+                    Ask About an Order
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-cocoa-950 overflow-hidden">
+            <!-- Background Photography with Editorial Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/9d375318-8982-4fb7-9683-980ce3676bbf.jpg" 
+                     alt="Freshly baked homemade chocolate chunk cookies" 
+                     class="w-full h-full object-cover object-center scale-105 transform transition-transform duration-10000 ease-out" 
+                     loading="eager"
+                     onerror="this.src='https://placehold.co/1920x1080/4a241b/fbf7ee?text=Fresh+Baked+Cookies'">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+
+            <!-- Hero Content Layer -->
+            <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 sm:py-32">
+                <div class="inline-flex items-center space-x-2 bg-cream-50/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-cream-50/20 text-cream-200 text-xs font-semibold tracking-wider uppercase mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cream-300"></span>
+                    <span>Handcrafted in Small Batches</span>
+                </div>
+
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-cream-50 tracking-tight leading-tight mb-6 text-glow">
+                    Homemade Cookies. <br class="hidden sm:inline"/>
+                    <span class="italic font-normal text-cream-200">Made with Heart.</span>
+                </h1>
+
+                <p class="max-w-2xl mx-auto text-lg sm:text-xl text-cream-100/90 leading-relaxed font-light mb-10">
+                    Discover the warmth of truly homemade cookies, baked with care, premium ingredients, and plenty of love right here in Trumbull, Connecticut.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                    <a href="#cookies" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cream-200 text-cocoa-900 font-semibold text-base shadow-lg hover:bg-cream-50 transition-all duration-300 transform hover:-translate-y-0.5">
+                        Explore Our Cookies
+                    </a>
+                    <a href="#custom-orders" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cocoa-800/80 hover:bg-cocoa-800 text-cream-100 font-semibold text-base border border-cream-200/30 backdrop-blur-sm transition-all duration-300">
+                        Ask About an Order
+                    </a>
+                </div>
+
+                <!-- Subtle scroll prompt -->
+                <div class="mt-16 sm:mt-24 flex flex-col items-center opacity-80 hover:opacity-100 transition-opacity">
+                    <a href="#promise" class="text-cream-200 text-xs uppercase tracking-widest flex flex-col items-center gap-2">
+                        <span>Scroll To Discover</span>
+                        <i class="fa-solid fa-chevron-down animate-bounce text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND PROMISE / INTRODUCTION -->
+        <section id="promise" class="py-20 sm:py-28 bg-cream-100 bg-paper-texture border-b border-cocoa-200/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="font-handwriting text-2xl sm:text-3xl text-cocoa-600 block mb-2">Welcome to Big G's</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-cocoa-900 tracking-tight mb-6">
+                    A Little Something Sweet for Every Moment
+                </h2>
+                <div class="w-16 h-0.5 bg-cocoa-600/30 mx-auto mb-8"></div>
+                <p class="text-lg sm:text-xl text-cocoa-800/90 leading-relaxed font-light mb-8">
+                    At Big G's Cookies, every batch represents a genuine passion for baking and bringing joy to our local neighborhood. We believe in rich flavors, thick textures, generous chocolate, and the simple comfort that only fresh homemade baking can bring.
+                </p>
+                
+                <!-- Highlights Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 pt-8 border-t border-cocoa-200/60">
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center text-cocoa-800 text-xl mb-4">
+                            <i class="fa-solid fa-house-chimney-heart"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-semibold text-cocoa-900 mb-2">Home-Baked</h3>
+                        <p class="text-sm text-cocoa-800/80">Baked fresh in small batches right in Trumbull, CT with authentic care.</p>
+                    </div>
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center text-cocoa-800 text-xl mb-4">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-semibold text-cocoa-900 mb-2">Quality Ingredients</h3>
+                        <p class="text-sm text-cocoa-800/80">Thoughtfully sourced real butter, pure vanilla extract, and rich chocolate.</p>
+                    </div>
+                    <div class="p-4 flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center text-cocoa-800 text-xl mb-4">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-semibold text-cocoa-900 mb-2">Community Driven</h3>
+                        <p class="text-sm text-cocoa-800/80">Proudly connecting with neighbors at local markets and events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT SHOWCASE / OUR COOKIES -->
+        <section id="cookies" class="py-20 sm:py-28 bg-cream-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Baked Fresh</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cocoa-900 tracking-tight">Meet The Cookies</h2>
+                    </div>
+                    <p class="mt-4 md:mt-0 text-cocoa-800/80 max-w-md text-sm sm:text-base">
+                        Explore our handcrafted cookie creations. Note: Cookie selection varies by batch and event.
+                    </p>
+                </div>
+
+                <!-- Cookies Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Cookie Item 1 -->
+                    <div class="group bg-cream-100 rounded-2xl overflow-hidden border border-cocoa-200/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-cocoa-200">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/863385954_1172283625398505_4724837018760550033_n.jpg" 
+                                 alt="Chocolate Chunk Classic Cookie" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Chocolate+Chunk'">
+                            <span class="absolute top-3 right-3 bg-cocoa-900/90 backdrop-blur-md text-cream-100 text-xs px-3 py-1 rounded-full font-medium">Signature</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-serif text-xl font-bold text-cocoa-900 mb-2 group-hover:text-cocoa-600 transition-colors">Classic Chocolate Chunk</h3>
+                            <p class="text-sm text-cocoa-800/80 flex-grow mb-4">Golden edges, soft center, and packed generously with dark and milk chocolate chunks.</p>
+                            <div class="pt-4 border-t border-cocoa-200/50 flex items-center justify-between">
+                                <span class="text-xs text-cocoa-600 font-semibold uppercase tracking-wider">Fresh Batch</span>
+                                <button onclick="openEnquiryModal('Classic Chocolate Chunk')" class="text-sm font-semibold text-cocoa-800 hover:text-raspberry-600 inline-flex items-center gap-1">
+                                    Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cookie Item 2 -->
+                    <div class="group bg-cream-100 rounded-2xl overflow-hidden border border-cocoa-200/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-cocoa-200">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/859582052_1172283988731802_7673432027459677391_n.jpg" 
+                                 alt="Double Chocolate Fudge Cookie" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Double+Chocolate'">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-serif text-xl font-bold text-cocoa-900 mb-2 group-hover:text-cocoa-600 transition-colors">Double Chocolate Crave</h3>
+                            <p class="text-sm text-cocoa-800/80 flex-grow mb-4">Rich cocoa dough studded with melty chocolate pieces for true chocolate enthusiasts.</p>
+                            <div class="pt-4 border-t border-cocoa-200/50 flex items-center justify-between">
+                                <span class="text-xs text-cocoa-600 font-semibold uppercase tracking-wider">Decadent</span>
+                                <button onclick="openEnquiryModal('Double Chocolate Crave')" class="text-sm font-semibold text-cocoa-800 hover:text-raspberry-600 inline-flex items-center gap-1">
+                                    Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cookie Item 3 -->
+                    <div class="group bg-cream-100 rounded-2xl overflow-hidden border border-cocoa-200/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-cocoa-200">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/859865849_1172283348731866_1714634026461247778_n.jpg" 
+                                 alt="Celebration Rainbow Cookie" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Rainbow+Delight'">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-serif text-xl font-bold text-cocoa-900 mb-2 group-hover:text-cocoa-600 transition-colors">Rainbow Celebration</h3>
+                            <p class="text-sm text-cocoa-800/80 flex-grow mb-4">A festive homemade favorite layered with colorful sprinkles and creamy sweetness.</p>
+                            <div class="pt-4 border-t border-cocoa-200/50 flex items-center justify-between">
+                                <span class="text-xs text-cocoa-600 font-semibold uppercase tracking-wider">Party Favorite</span>
+                                <button onclick="openEnquiryModal('Rainbow Celebration')" class="text-sm font-semibold text-cocoa-800 hover:text-raspberry-600 inline-flex items-center gap-1">
+                                    Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cookie Item 4 -->
+                    <div class="group bg-cream-100 rounded-2xl overflow-hidden border border-cocoa-200/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                        <div class="relative h-64 overflow-hidden bg-cocoa-200">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/839960361_1161049409855260_2185194429320101029_n.jpg" 
+                                 alt="Specialty Seasonal Cookie" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Specialty+Batch'">
+                            <span class="absolute top-3 right-3 bg-sage-700 text-cream-50 text-xs px-3 py-1 rounded-full font-medium">Seasonal</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-serif text-xl font-bold text-cocoa-900 mb-2 group-hover:text-cocoa-600 transition-colors">Specialty Rotating Batch</h3>
+                            <p class="text-sm text-cocoa-800/80 flex-grow mb-4">Limited-run flavors inspired by seasons, local events, and baker's creative experiments.</p>
+                            <div class="pt-4 border-t border-cocoa-200/50 flex items-center justify-between">
+                                <span class="text-xs text-cocoa-600 font-semibold uppercase tracking-wider">Rotating</span>
+                                <button onclick="openEnquiryModal('Specialty Rotating Batch')" class="text-sm font-semibold text-cocoa-800 hover:text-raspberry-600 inline-flex items-center gap-1">
+                                    Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Callout Banner -->
+                <div class="mt-12 bg-cream-200/70 border border-cocoa-200 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-cocoa-800 text-cream-50 flex items-center justify-center shrink-0 hidden sm:flex">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <p class="text-sm text-cocoa-900">
+                            <strong>Note on availability:</strong> As a home-based bakery, our menu evolves constantly. Check our official Facebook page for this week's current baking schedule!
+                        </p>
+                    </div>
+                    <a href="https://www.facebook.com/cookiegeniusbaker" target="_blank" rel="noopener noreferrer" class="shrink-0 px-5 py-2.5 rounded-full bg-cocoa-800 hover:bg-cocoa-900 text-cream-50 text-xs font-semibold uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+                        <i class="fa-brands fa-facebook-f"></i> Visit Facebook
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURED EDITORIAL COOKIE SPOTLIGHT -->
+        <section class="py-20 bg-cocoa-950 text-cream-100 overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-cocoa-800">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/main/829055284_1148740764419458_3938285216169740410_n.jpg" 
+                                 alt="Freshly baked thick gourmet cookie detail" 
+                                 class="w-full h-[450px] object-cover"
+                                 onerror="this.src='https://placehold.co/800x800/4a241b/fbf7ee?text=Featured+Cookie'">
+                        </div>
+                        <!-- Decorative background frame -->
+                        <div class="absolute -bottom-6 -left-6 w-full h-full border-2 border-cream-200/20 rounded-2xl z-0 hidden sm:block"></div>
+                    </div>
+
+                    <div class="lg:col-span-6 lg:pl-8">
+                        <span class="text-xs font-semibold tracking-widest text-cream-300 uppercase block mb-3">Baker's Spotlight</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cream-50 tracking-tight mb-6">
+                            Thick, Golden & Unapologetically Generous
+                        </h2>
+                        <p class="text-cream-200/90 text-base sm:text-lg leading-relaxed mb-6 font-light">
+                            We take pride in baking cookies that are satisfyingly substantial. Every piece features a slightly crisp outer rim, a soft buttery center, and real chunks of chocolate melted into every bite.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-cream-200 text-sm">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sage-500"></i> Freshly prepared dough rested for optimal flavor development
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sage-500"></i> Premium butter and high-quality chocolate chunks
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sage-500"></i> No pre-packaged mixes, built completely from scratch
+                            </li>
+                        </ul>
+                        <a href="#custom-orders" class="inline-flex items-center px-8 py-4 rounded-full bg-cream-200 text-cocoa-950 font-semibold hover:bg-cream-100 transition-all duration-300">
+                            Request Your Batch Today
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOM ORDERS & ENQUIRY FORM -->
+        <section id="custom-orders" class="py-20 sm:py-28 bg-cream-100 bg-paper-texture">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Form Column Info -->
+                    <div class="lg:col-span-5">
+                        <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Order Enquiries</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cocoa-900 tracking-tight mb-6">
+                            Something Special? <br/>
+                            <span class="italic font-normal">Let's Make It Sweet.</span>
+                        </h2>
+                        <p class="text-cocoa-800/90 text-base leading-relaxed mb-8">
+                            Whether you are planning a birthday party, family celebration, corporate gathering, or simply want to stock up on homemade treats, we'd love to hear from you.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-cream-200 text-cocoa-800 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-semibold text-cocoa-900">Custom Occasions</h4>
+                                    <p class="text-xs text-cocoa-800/80 mt-1">Gifts, family get-togethers, holidays, and community celebrations.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-cream-200 text-cocoa-800 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-semibold text-cocoa-900">Local Collection</h4>
+                                    <p class="text-xs text-cocoa-800/80 mt-1">Serving local customers in Trumbull, CT and neighboring areas.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-cream-200 text-cocoa-800 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-semibold text-cocoa-900">Direct Confirmation</h4>
+                                    <p class="text-xs text-cocoa-800/80 mt-1">Submitting an enquiry allows us to review availability and confirm details directly with you.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct contact links fallback -->
+                        <div class="mt-8 pt-8 border-t border-cocoa-200/80">
+                            <p class="text-xs text-cocoa-600 font-semibold uppercase tracking-wider mb-3">Prefer Direct Contact?</p>
+                            <div class="flex flex-col space-y-2 text-sm text-cocoa-900">
+                                <a href="tel:14752391224" class="hover:text-cocoa-600 flex items-center gap-2">
+                                    <i class="fa-solid fa-phone text-cocoa-600 w-4"></i> +1 475-239-1224
+                                </a>
+                                <a href="mailto:biggscookies@outlook.com" class="hover:text-cocoa-600 flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope text-cocoa-600 w-4"></i> biggscookies@outlook.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Container -->
+                    <div class="lg:col-span-7 bg-cream-50 p-6 sm:p-10 rounded-3xl border border-cocoa-200/80 shadow-md">
+                        <form id="orderEnquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Your Name *</label>
+                                    <input type="text" id="fullName" required placeholder="e.g. Sarah Jenkins" 
+                                           class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                </div>
+                                <div>
+                                    <label for="emailAddress" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Email Address *</label>
+                                    <input type="email" id="emailAddress" required placeholder="e.g. sarah@example.com" 
+                                           class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phoneNumber" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Phone Number (Optional)</label>
+                                    <input type="tel" id="phoneNumber" placeholder="e.g. (475) 239-1224" 
+                                           class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                </div>
+                                <div>
+                                    <label for="requestedDate" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Needed By Date *</label>
+                                    <input type="date" id="requestedDate" required 
+                                           class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="cookieVariety" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Preferred Cookie Variety</label>
+                                    <select id="cookieVariety" class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                        <option value="Assorted Mix">Assorted Batch / Mix</option>
+                                        <option value="Classic Chocolate Chunk">Classic Chocolate Chunk</option>
+                                        <option value="Double Chocolate Crave">Double Chocolate Crave</option>
+                                        <option value="Rainbow Celebration">Rainbow Celebration</option>
+                                        <option value="Custom Enquiry">Custom Variety Request</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="approxQuantity" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Approximate Quantity</label>
+                                    <select id="approxQuantity" class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm">
+                                        <option value="1 Dozen (12 cookies)">1 Dozen (12 cookies)</option>
+                                        <option value="2 Dozen (24 cookies)">2 Dozen (24 cookies)</option>
+                                        <option value="3+ Dozen (Large Order)">3+ Dozen (Large Order)</option>
+                                        <option value="Custom Batch Size">Custom Batch Size</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="orderDetails" class="block text-xs font-semibold uppercase tracking-wider text-cocoa-800 mb-2">Additional Details / Event Notes</label>
+                                <textarea id="orderDetails" rows="4" placeholder="Tell us about your event, preferences, or any specific questions..." 
+                                          class="w-full px-4 py-3 rounded-xl bg-cream-100 border border-cocoa-200 text-cocoa-900 focus:outline-none focus:ring-2 focus:ring-cocoa-600 text-sm"></textarea>
+                            </div>
+
+                            <div class="bg-amber-50/80 border border-amber-200/80 p-4 rounded-xl text-xs text-amber-900 flex items-start gap-3">
+                                <i class="fa-solid fa-circle-exclamation text-amber-600 mt-0.5"></i>
+                                <span>Note: Submitting this form sends an order enquiry. Big G's Cookies will contact you via email or phone to confirm availability and order arrangement details.</span>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-cocoa-800 hover:bg-cocoa-900 text-cream-50 font-semibold text-base shadow-md transition-all duration-200 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-cream-300"></i>
+                                <span>Send Order Enquiry</span>
+                            </button>
+
+                        </form>
+
+                        <!-- Submission Feedback Message Box -->
+                        <div id="formSuccessMessage" class="hidden text-center py-8">
+                            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4 text-2xl">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-cocoa-900 mb-2">Enquiry Sent!</h3>
+                            <p class="text-sm text-cocoa-800/80 max-w-md mx-auto mb-6">
+                                Thank you for reaching out to Big G's Cookies! We have received your enquiry and will follow up with you as soon as possible.
+                            </p>
+                            <button onclick="resetOrderForm()" class="px-6 py-2.5 rounded-full bg-cream-200 text-cocoa-900 text-sm font-semibold hover:bg-cream-300 transition-colors">
+                                Send Another Enquiry
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LOCAL EVENTS & COMMUNITY PRESENCE -->
+        <section id="events" class="py-20 sm:py-28 bg-cream-50 border-t border-cocoa-200/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 order-2 lg:order-1">
+                        <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Trumbull, CT & Beyond</span>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cocoa-900 tracking-tight mb-6">
+                            Find Us Around The Community
+                        </h2>
+                        <p class="text-cocoa-800/90 text-base leading-relaxed mb-6 font-light">
+                            Big G's Cookies loves participating in local market pop-ups, community events, and seasonal gatherings around Connecticut. Connecting face-to-face with fellow cookie lovers is what makes home baking so rewarding!
+                        </p>
+
+                        <!-- Community Card Callout -->
+                        <div class="bg-cream-100 p-6 rounded-2xl border border-cocoa-200 mb-8 space-y-4">
+                            <div class="flex items-center gap-3 text-cocoa-900 font-serif font-semibold text-lg">
+                                <i class="fa-solid fa-store text-cocoa-600"></i>
+                                <span>Upcoming Market Updates</span>
+                            </div>
+                            <p class="text-sm text-cocoa-800/80 leading-relaxed">
+                                Market schedules and pop-up appearances are updated regularly on our Facebook page. Follow along to see where we'll be setting up next!
+                            </p>
+                            <div class="pt-2">
+                                <a href="https://www.facebook.com/cookiegeniusbaker" target="_blank" rel="noopener noreferrer" 
+                                   class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cocoa-800 hover:text-raspberry-600">
+                                    <span>Check Facebook Announcements</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 text-xs text-cocoa-600 font-semibold">
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Local Trumbull CT</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Fresh Pop-Up Batches</span>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 order-1 lg:order-2">
+                        <div class="relative rounded-3xl overflow-hidden shadow-xl border border-cocoa-200">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/720831594_1046601321300070_1386399757716031443_n.jpg" 
+                                 alt="Local community bakery pop up" 
+                                 class="w-full h-[400px] sm:h-[480px] object-cover"
+                                 onerror="this.src='https://placehold.co/800x600/4a241b/fbf7ee?text=Local+Community+Events'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cocoa-950/60 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-cream-50">
+                                <p class="font-serif text-xl font-bold">Baked Fresh for Connecticut</p>
+                                <p class="text-xs text-cream-200/90 mt-1">Sharing sweet moments across our local neighborhood.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- OUR STORY SECTION -->
+        <section id="story" class="py-20 sm:py-28 bg-cream-100 bg-paper-texture border-t border-cocoa-200/60">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <!-- Circular Logo Badge Highlight -->
+                <div class="w-24 h-24 mx-auto mb-6">
+                    <div class="w-full h-full rounded-full p-1.5 bg-gradient-to-br from-cocoa-800 via-cocoa-600 to-cream-300 shadow-lg flex items-center justify-center">
+                        <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/4fd30a5d-e627-4826-bfe4-1054897873e0.jpg" 
+                             alt="Big G's Cookies Brand Mascot Logo" 
+                             class="w-full h-full object-cover rounded-full"
+                             onerror="this.src='https://placehold.co/200x200/4a241b/fbf7ee?text=Big+G%27s'">
+                    </div>
+                </div>
+
+                <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Our Heritage</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-cocoa-900 tracking-tight mb-8">
+                    The Story Behind Big G's Cookies
+                </h2>
+
+                <div class="space-y-6 text-cocoa-800/90 text-base sm:text-lg leading-relaxed font-light max-w-3xl mx-auto">
+                    <p>
+                        Big G's Cookies started with a simple home kitchen dream: to craft honest, delicious cookies that bring a little extra sweetness into everyday life. Based in Trumbull, Connecticut, our bakery operates with a deep commitment to home-baked quality and community connection.
+                    </p>
+                    <p>
+                        We believe that the best cookies aren't manufactured on massive conveyor belts. They come from careful ingredient selection, small batches, and a baker who genuinely cares about every tray coming out of the oven.
+                    </p>
+                    <p class="font-serif italic text-cocoa-900 text-xl pt-4">
+                        "Baking is our way of sharing happiness with our neighbors—one tray of cookies at a time."
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF / COMMUNITY INVITATION -->
+        <section class="py-16 bg-cream-200/50 border-y border-cocoa-200/60">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <i class="fa-brands fa-facebook text-4xl text-cocoa-800 mb-4 block"></i>
+                <h3 class="font-serif text-2xl font-bold text-cocoa-900 mb-3">Join Our Cookie Community</h3>
+                <p class="text-cocoa-800/80 text-sm max-w-lg mx-auto mb-6">
+                    See our latest bakes, market photos, customer feedback, and real-time updates directly on our official Facebook page.
+                </p>
+                <a href="https://www.facebook.com/cookiegeniusbaker" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cocoa-800 hover:bg-cocoa-900 text-cream-50 font-medium text-sm transition-all duration-200 shadow-sm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Follow @cookiegeniusbaker</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PHOTO GALLERY (EDITORIAL SELECTION) -->
+        <section class="py-20 sm:py-28 bg-cream-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Visual Treats</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cocoa-900 tracking-tight">Fresh From The Kitchen</h2>
+                    <p class="text-cocoa-800/80 text-sm mt-2">A glimpse at our handcrafted baking process and delicious creations.</p>
+                </div>
+
+                <!-- Asymmetric Gallery Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    
+                    <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden group shadow-sm">
+                        <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/814607054_1137418018885066_1854236687070263569_n.jpg" 
+                             alt="Freshly Baked Cookie Creation 1" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Cookie+1'">
+                        <div class="absolute inset-0 bg-cocoa-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-cream-50 font-serif text-sm p-4 text-center">
+                            Freshly Baked Warm Chunks
+                        </div>
+                    </div>
+
+                    <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden group shadow-sm md:mt-8">
+                        <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/810868088_1134945402465661_7517281464080610021_n.jpg" 
+                             alt="Freshly Baked Cookie Creation 2" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Cookie+2'">
+                        <div class="absolute inset-0 bg-cocoa-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-cream-50 font-serif text-sm p-4 text-center">
+                            Generous Thick Batches
+                        </div>
+                    </div>
+
+                    <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden group shadow-sm">
+                        <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/811267214_1134945485798986_8835814562313541049_n.jpg" 
+                             alt="Freshly Baked Cookie Creation 3" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Cookie+3'">
+                        <div class="absolute inset-0 bg-cocoa-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-cream-50 font-serif text-sm p-4 text-center">
+                            Double Chocolate Goodness
+                        </div>
+                    </div>
+
+                    <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden group shadow-sm md:mt-8">
+                        <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/729139482_1057463446880524_7613660228632584019_n.jpg" 
+                             alt="Freshly Baked Cookie Creation 4" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x600/4a241b/fbf7ee?text=Cookie+4'">
+                        <div class="absolute inset-0 bg-cocoa-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-cream-50 font-serif text-sm p-4 text-center">
+                            Colorful Celebrations
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CUSTOMER FAQ ACCORDION -->
+        <section id="faq" class="py-20 sm:py-28 bg-cream-100 bg-paper-texture border-t border-cocoa-200/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                    <span class="text-xs font-semibold tracking-widest text-cocoa-600 uppercase block mb-2">Good To Know</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cocoa-900 tracking-tight">Frequently Asked Questions</h2>
+                </div>
+
+                <!-- Accordion Items -->
+                <div class="space-y-4">
+                    
+                    <div class="bg-cream-50 rounded-2xl border border-cocoa-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="font-serif font-semibold text-cocoa-900 text-lg">How can I place an order enquiry for cookies?</span>
+                            <i class="fa-solid fa-chevron-down text-cocoa-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5 text-sm text-cocoa-800/80 leading-relaxed border-t border-cocoa-200/40 pt-3">
+                            You can easily submit an enquiry using our online <a href="#custom-orders" class="text-cocoa-900 underline font-medium">Order Enquiry Form</a> or contact us directly via email (biggscookies@outlook.com) or phone (+1 475-239-1224). We will discuss your requested date, batch quantity, and availability.
+                        </div>
+                    </div>
+
+                    <div class="bg-cream-50 rounded-2xl border border-cocoa-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="font-serif font-semibold text-cocoa-900 text-lg">Where is Big G's Cookies located?</span>
+                            <i class="fa-solid fa-chevron-down text-cocoa-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5 text-sm text-cocoa-800/80 leading-relaxed border-t border-cocoa-200/40 pt-3">
+                            We are a licensed home-based bakery located in Trumbull, Connecticut. We operate without a retail storefront, providing local pickup coordinates and participating in local Connecticut events.
+                        </div>
+                    </div>
+
+                    <div class="bg-cream-50 rounded-2xl border border-cocoa-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="font-serif font-semibold text-cocoa-900 text-lg">Are custom orders and event batches available?</span>
+                            <i class="fa-solid fa-chevron-down text-cocoa-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5 text-sm text-cocoa-800/80 leading-relaxed border-t border-cocoa-200/40 pt-3">
+                            Yes! We love baking for birthdays, family gatherings, gifts, and special events. Please reach out well in advance to ensure calendar availability for your date.
+                        </div>
+                    </div>
+
+                    <div class="bg-cream-50 rounded-2xl border border-cocoa-200/80 overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between focus:outline-none">
+                            <span class="font-serif font-semibold text-cocoa-900 text-lg">Where can I find upcoming market appearances?</span>
+                            <i class="fa-solid fa-chevron-down text-cocoa-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5 text-sm text-cocoa-800/80 leading-relaxed border-t border-cocoa-200/40 pt-3">
+                            We announce our market dates, pop-up appearances, and fresh batch drops regularly on our official <a href="https://www.facebook.com/cookiegeniusbaker" target="_blank" class="text-cocoa-900 underline font-medium">Facebook page</a>.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FINAL CONVERSION CTA HERO -->
+        <section class="relative py-24 sm:py-32 bg-cocoa-950 text-cream-50 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=1920" 
+                     alt="Cookies baked with heart" 
+                     class="w-full h-full object-cover opacity-25">
+                <div class="absolute inset-0 bg-gradient-to-t from-cocoa-950 via-cocoa-950/80 to-cocoa-950/90"></div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+                <h2 class="font-serif text-4xl sm:text-6xl font-bold tracking-tight mb-6 text-glow">
+                    Ready For Something Sweet?
+                </h2>
+                <p class="text-cream-200/90 text-lg sm:text-xl font-light max-w-xl mx-auto mb-10">
+                    Get in touch with Big G's Cookies today and ask about your next homemade order.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#custom-orders" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cream-200 text-cocoa-950 font-semibold text-base shadow-lg hover:bg-cream-100 transition-all duration-200">
+                        Ask About an Order
+                    </a>
+                    <a href="#cookies" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cocoa-800 hover:bg-cocoa-700 text-cream-100 font-semibold text-base border border-cream-200/20 transition-all duration-200">
+                        Explore Our Cookies
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROFESSIONAL FOOTER -->
+    <footer class="bg-cocoa-950 text-cream-200 border-t border-cocoa-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <!-- Footer Logo -->
+                        <div class="w-14 h-14">
+                            <div class="w-full h-full rounded-full p-1 bg-gradient-to-br from-cream-300 to-cocoa-600 shadow-md">
+                                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/FC/refs/heads/main/4fd30a5d-e627-4826-bfe4-1054897873e0.jpg" 
+                                     alt="Big G's Cookies Logo" 
+                                     class="w-full h-full object-cover rounded-full"
+                                     onerror="this.src='https://placehold.co/200x200/4a241b/fbf7ee?text=Big+G%27s'">
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-serif text-lg font-bold text-cream-50 block leading-tight">Big G's Cookies</span>
+                            <span class="text-xs text-cream-300">Homemade Bakery CT</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-cream-300/80 leading-relaxed font-light">
+                        Handcrafted gourmet cookies baked with heart and care in Trumbull, Connecticut. Bringing sweetness to local families and community events.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="lg:col-span-3 space-y-3">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-cream-100">Quick Links</p>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-cream-50 transition-colors">Home</a></li>
+                        <li><a href="#cookies" class="hover:text-cream-50 transition-colors">Our Cookies</a></li>
+                        <li><a href="#custom-orders" class="hover:text-cream-50 transition-colors">Custom Orders</a></li>
+                        <li><a href="#events" class="hover:text-cream-50 transition-colors">Community Events</a></li>
+                        <li><a href="#story" class="hover:text-cream-50 transition-colors">Our Story</a></li>
+                        <li><a href="#faq" class="hover:text-cream-50 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div class="lg:col-span-3 space-y-3">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-cream-100">Contact Details</p>
+                    <ul class="space-y-2 text-xs text-cream-300">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-cocoa-300 w-4"></i> Trumbull, Connecticut
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-cocoa-300 w-4"></i> +1 475-239-1224
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-cocoa-300 w-4"></i> biggscookies@outlook.com
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Social Connection -->
+                <div class="lg:col-span-2 space-y-3 flex flex-col items-start">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-cream-100">Follow Along</p>
+                    <a href="https://www.facebook.com/cookiegeniusbaker" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-full bg-cocoa-900 hover:bg-cocoa-800 text-cream-100 text-xs border border-cocoa-800 transition-colors">
+                        <i class="fa-brands fa-facebook-f text-cream-300"></i>
+                        <span>Official Facebook</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-cocoa-900/80 flex flex-col sm:flex-row items-center justify-between text-xs text-cream-300/60 gap-4">
+                <p>&copy; <span id="currentYear"></span> Big G's Cookies. All rights reserved. Trumbull, CT.</p>
+                <p>Homemade Cookie Bakery | Built with care</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QUICK ENQUIRY MODAL DIALOG -->
+    <div id="enquiryModal" class="fixed inset-0 z-50 bg-cocoa-950/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-cream-50 rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-cocoa-200 shadow-2xl relative">
+            <button onclick="closeEnquiryModal()" class="absolute top-4 right-4 text-cocoa-600 hover:text-cocoa-900 p-2 text-xl" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <span class="text-xs font-semibold text-cocoa-600 uppercase tracking-widest block mb-1">Quick Enquiry</span>
+            <h3 id="modalCookieTitle" class="font-serif text-2xl font-bold text-cocoa-900 mb-4">Cookie Variety</h3>
+            <p class="text-xs text-cocoa-800/80 mb-6">
+                Enquiring about our <strong id="modalCookieName" class="text-cocoa-900">Classic Cookie</strong>. Fill out this fast form and we will check our baking schedule!
+            </p>
+            
+            <form onsubmit="handleQuickModalSubmit(event)" class="space-y-4">
+                <input type="hidden" id="modalSelectedCookie">
+                <div>
+                    <label class="block text-xs font-semibold text-cocoa-800 uppercase mb-1">Your Name *</label>
+                    <input type="text" required id="modalName" placeholder="Full Name" class="w-full px-4 py-2.5 rounded-xl bg-cream-100 border border-cocoa-200 text-sm focus:outline-none focus:ring-2 focus:ring-cocoa-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-cocoa-800 uppercase mb-1">Email or Phone *</label>
+                    <input type="text" required id="modalContact" placeholder="email@example.com or phone" class="w-full px-4 py-2.5 rounded-xl bg-cream-100 border border-cocoa-200 text-sm focus:outline-none focus:ring-2 focus:ring-cocoa-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-cocoa-800 uppercase mb-1">Quantity Requested</label>
+                    <select id="modalQty" class="w-full px-4 py-2.5 rounded-xl bg-cream-100 border border-cocoa-200 text-sm focus:outline-none focus:ring-2 focus:ring-cocoa-600">
+                        <option value="1 Dozen">1 Dozen (12 cookies)</option>
+                        <option value="2 Dozen">2 Dozen (24 cookies)</option>
+                        <option value="3+ Dozen">3+ Dozen</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-cocoa-800 hover:bg-cocoa-900 text-cream-50 font-semibold text-sm transition-colors mt-2">
+                    Submit Quick Enquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#home" id="backToTop" class="fixed bottom-6 right-6 z-30 w-12 h-12 rounded-full bg-cocoa-800 text-cream-100 flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-cocoa-900">
+        <i class="fa-solid fa-arrow-up text-sm"></i>
+    </a>
+
+    <!-- TIMED FLOATING CTA BANNER (APPEARS EVERY 15 SECONDS / CAN BE CLOSED) -->
+    <div id="timedCtaBanner" class="fixed bottom-6 left-6 z-40 max-w-sm bg-cream-50 border border-cocoa-200/90 rounded-2xl p-4 shadow-2xl transform translate-y-32 opacity-0 transition-all duration-700 ease-out hidden">
+        <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-full bg-cocoa-800 text-cream-50 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-cookie-bite text-cream-300"></i>
+            </div>
+            <div class="flex-grow">
+                <div class="flex items-center justify-between mb-1">
+                    <h4 class="font-serif font-bold text-cocoa-900 text-sm">Fresh Batch Available!</h4>
+                    <button onclick="dismissTimedCta()" class="text-cocoa-600 hover:text-cocoa-900 text-xs px-1" aria-label="Close notification">
+                        <i class="fa-solid fa-xmark text-sm"></i>
+                    </button>
+                </div>
+                <p class="text-xs text-cocoa-800/80 mb-3">Planning an event or craving homemade cookies in Trumbull, CT? Get in touch today.</p>
+                <div class="flex items-center gap-2">
+                    <a href="#custom-orders" onclick="dismissTimedCta()" class="px-4 py-2 rounded-xl bg-cocoa-800 hover:bg-cocoa-900 text-cream-50 text-xs font-semibold tracking-wider uppercase transition-colors">
+                        Ask About an Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile drawer menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile drawer when link is clicked
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Back to top button visibility on scroll
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTop.classList.remove('opacity-0', 'pointer-events-none');
+                backToTop.classList.add('opacity-100');
+            } else {
+                backToTop.classList.add('opacity-0', 'pointer-events-none');
+                backToTop.classList.remove('opacity-100');
+            }
+        });
+
+        // Custom FAQ Accordion Toggle
+        function toggleFaq(buttonElement) {
+            const content = buttonElement.nextElementSibling;
+            const icon = buttonElement.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Enquiry Form Handling (Simulated feedback without alert window)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('orderEnquiryForm');
+            const successMsg = document.getElementById('formSuccessMessage');
+            
+            form.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+        }
+
+        function resetOrderForm() {
+            const form = document.getElementById('orderEnquiryForm');
+            const successMsg = document.getElementById('formSuccessMessage');
+            
+            form.reset();
+            form.classList.remove('hidden');
+            successMsg.classList.add('hidden');
+        }
+
+        // Quick Modal Window functions
+        function openEnquiryModal(cookieName) {
+            const modal = document.getElementById('enquiryModal');
+            document.getElementById('modalCookieTitle').textContent = cookieName;
+            document.getElementById('modalCookieName').textContent = cookieName;
+            document.getElementById('modalSelectedCookie').value = cookieName;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeEnquiryModal() {
+            const modal = document.getElementById('enquiryModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleQuickModalSubmit(event) {
+            event.preventDefault();
+            const cookieName = document.getElementById('modalSelectedCookie').value;
+            closeEnquiryModal();
+            
+            // Populate the main form with chosen cookie & scroll to custom orders section smoothly
+            const mainSelect = document.getElementById('cookieVariety');
+            if (mainSelect) {
+                for (let i = 0; i < mainSelect.options.length; i++) {
+                    if (mainSelect.options[i].value === cookieName) {
+                        mainSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            
+            const ordersSection = document.getElementById('custom-orders');
+            ordersSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // TIMED FLOATING CTA LOGIC (Triggered every 15 seconds)
+        let ctaIntervalTimer = null;
+
+        function showTimedCta() {
+            const banner = document.getElementById('timedCtaBanner');
+            if (!banner) return;
+            
+            banner.classList.remove('hidden');
+            // Slight timeout to allow transition display
+            setTimeout(() => {
+                banner.classList.remove('translate-y-32', 'opacity-0');
+                banner.classList.add('translate-y-0', 'opacity-100');
+            }, 50);
+        }
+
+        function dismissTimedCta() {
+            const banner = document.getElementById('timedCtaBanner');
+            if (!banner) return;
+            
+            banner.classList.remove('translate-y-0', 'opacity-100');
+            banner.classList.add('translate-y-32', 'opacity-0');
+            setTimeout(() => {
+                banner.classList.add('hidden');
+            }, 700);
+        }
+
+        // Initialize 15-second loop
+        window.addEventListener('load', () => {
+            // First show after 15 seconds
+            setTimeout(() => {
+                showTimedCta();
+                
+                // Then repeat every 15 seconds if dismissed
+                ctaIntervalTimer = setInterval(() => {
+                    const banner = document.getElementById('timedCtaBanner');
+                    if (banner && banner.classList.contains('hidden')) {
+                        showTimedCta();
+                    }
+                }, 15000);
+            }, 15000);
+        });
+    </script>
+</body>
+</html>
